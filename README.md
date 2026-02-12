@@ -386,6 +386,62 @@ If you use this project in research, please cite:
 }
 ```
 
+## Large File Management with Git LFS
+
+This repository uses Git LFS (Large File Storage) for large model files and binary assets. This keeps the repository lightweight while preserving full version control.
+
+### Setup Git LFS
+
+```bash
+# Install Git LFS (if not already installed)
+# On Windows: download from https://git-lfs.github.com/ or use winget
+winget install GitHub.GitLFS
+
+# On macOS:
+brew install git-lfs
+
+# On Linux:
+sudo apt-get install git-lfs
+
+# Initialize Git LFS in your repository
+git lfs install
+```
+
+### Files Tracked by LFS
+
+The following file types are automatically tracked:
+- `*.pth` - PyTorch model files
+- `*.pt` - PyTorch checkpoints
+- `*.stl` - 3D mesh files
+- `*.obj` - 3D object files
+- `*.onnx` - ONNX model files
+
+See [.gitattributes](.gitattributes) for the complete list.
+
+### Cloning with LFS
+
+```bash
+# Clone normally (LFS files are downloaded automatically if LFS is installed)
+git clone https://github.com/NEHAJAKATE/NN_ROBOT.git
+
+# If you're missing LFS files, pull them:
+git lfs pull
+```
+
+### Adding New Large Files
+
+```bash
+# Track new large files (example: new model)
+git lfs track "models/*.pth"
+git add .gitattributes
+git commit -m "Track model files with Git LFS"
+
+# Add your file normally
+git add models/my_model.pth
+git commit -m "Add new model"
+git push
+```
+
 ## License
 
 See [LICENSE](LICENSE) file
@@ -395,7 +451,8 @@ See [LICENSE](LICENSE) file
 Contributions welcome! Please:
 1. Fork the repository
 2. Create a feature branch
-3. Submit a pull request
+3. Install Git LFS locally (`git lfs install`)
+4. Submit a pull request
 
 ## Support
 

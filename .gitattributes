@@ -1,0 +1,36 @@
+# Git LFS Configuration for large binary files
+
+# PyTorch model files
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.ckpt filter=lfs diff=lfs merge=lfs -text
+
+# ONNX model files
+*.onnx filter=lfs diff=lfs merge=lfs -text
+
+# 3D mesh and model files
+*.stl filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.dae filter=lfs diff=lfs merge=lfs -text
+*.urdf filter=lfs diff=lfs merge=lfs -text
+
+# Large video and media files (if applicable)
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+
+# Large data files
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.hdf5 filter=lfs diff=lfs merge=lfs -text
+*.npz filter=lfs diff=lfs merge=lfs -text
+
+# Large log files
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+
+# Be explicit about text files (should never be tracked as binary)
+*.py diff=python
+*.yaml diff=python
+*.yml diff=python
+*.json diff=python
+*.xml diff=python
+*.md diff=markdown
