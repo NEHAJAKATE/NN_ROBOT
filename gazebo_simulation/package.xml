@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>robot_nn_ik</name>
+  <version>1.0.0</version>
+  <description>
+    Neural Network Inverse Kinematics solver with Gazebo simulation.
+    Supports 6-DOF robotic arms with real-time IK solving and visualization.
+  </description>
+
+  <!-- Maintainer -->
+  <maintainer email="user@example.com">Author</maintainer>
+  <license>MIT</license>
+
+  <!-- Authors -->
+  <author email="user@example.com">Author Name</author>
+
+  <!-- Build tool -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Build dependencies -->
+  <build_depend>rospy</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>controller_manager</build_depend>
+  <build_depend>robot_state_publisher</build_depend>
+  <build_depend>joint_state_controller</build_depend>
+  <build_depend>position_controllers</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>gazebo_msgs</build_depend>
+
+  <!-- Runtime dependencies -->
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>gazebo_ros_control</exec_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_controller</exec_depend>
+  <exec_depend>position_controllers</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>gazebo_msgs</exec_depend>
+
+  <!-- Documentation -->
+  <url type="website">https://github.com/yourrepo/NN_ROBOT</url>
+  <url type="repository">https://github.com/yourrepo/NN_ROBOT</url>
+  <url type="bugtracker">https://github.com/yourrepo/NN_ROBOT/issues</url>
+
+</package>

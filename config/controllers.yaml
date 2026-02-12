@@ -1,0 +1,56 @@
+# Joint position controllers for Gazebo
+# This file defines how joints are controlled in the simulator
+
+# Joint 1 Controller
+joint1_position_controller:
+  type: position_controllers/JointPositionController
+  joint: joint1
+  pid:
+    p: 100.0
+    i: 50.0
+    d: 10.0
+
+# Joint 2 Controller
+joint2_position_controller:
+  type: position_controllers/JointPositionController
+  joint: joint2
+  pid:
+    p: 100.0
+    i: 50.0
+    d: 10.0
+
+# Joint 3 Controller
+joint3_position_controller:
+  type: position_controllers/JointPositionController
+  joint: joint3
+  pid:
+    p: 100.0
+    i: 50.0
+    d: 10.0
+
+# Joint 4 Controller
+joint4_position_controller:
+  type: position_controllers/JointPositionController
+  joint: joint4
+  pid:
+    p: 80.0
+    i: 40.0
+    d: 8.0
+
+# Joint 5 Controller
+joint5_position_controller:
+  type: position_controllers/JointPositionController
+  joint: joint5
+  pid:
+    p: 80.0
+    i: 40.0
+    d: 8.0
+
+# Joint 6 Controller
+joint6_position_controller:
+  type: position_controllers/JointPositionController
+  joint: joint6
+  pid:
+    p: 60.0
+    i: 30.0
+    d: 6.0

@@ -1,0 +1,16 @@
+[2026-02-12 20:16:31] [src.gazebo_simulator] [WARNING] ROS/Gazebo not available. Simulation mode disabled.
+[2026-02-12 20:16:31] [__main__] [INFO] Initializing NN IK Robot Controller...
+[2026-02-12 20:16:31] [__main__] [INFO] Loading Neural Network IK model...
+[2026-02-12 20:16:31] [src.nn_ik_solver] [INFO] Using device: cpu
+[2026-02-12 20:16:31] [src.nn_ik_solver] [INFO] Model loaded successfully from ik_nn_model.pth
+[2026-02-12 20:16:31] [__main__] [INFO] Initializing Gazebo simulator...
+[2026-02-12 20:16:31] [__main__] [INFO] Controller initialized successfully!
+[2026-02-12 20:16:31] [__main__] [INFO] Target Position: [0.5 0.2 0.4]
+[2026-02-12 20:16:31] [__main__] [INFO] Target Rotation (deg): [0.0, 0.0, 0.0]
+[2026-02-12 20:16:31] [__main__] [INFO] ============================================================
+[2026-02-12 20:16:31] [__main__] [INFO] Executing Movement Request
+[2026-02-12 20:16:31] [__main__] [INFO] ============================================================
+[2026-02-12 20:16:31] [__main__] [INFO] Solving IK for pose: pos=[0.5 0.2 0.4], orn=[0. 0. 0. 1.]
+[2026-02-12 20:16:31] [__main__] [INFO] IK Solution: [ -7.9781556 -10.206531   -5.8591976   7.9684653  -0.8087373   1.0134914]
+[2026-02-12 20:16:31] [__main__] [INFO] Sending command to Gazebo: [ -7.9781556 -10.206531   -5.8591976   7.9684653  -0.8087373   1.0134914]
+[2026-02-12 20:16:31] [src.gazebo_simulator] [WARNING] Gazebo not connected. Skipping joint position command.
